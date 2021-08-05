@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wisdom of Our Yoruba Elders</title>
+    <meta property='og:title' content="The Wisdom of Our Yoruba Elders">
+    <meta property='og:image' content="http://127.0.0.1:5500/Assets/proverb.png">
+    <meta property='og:image:width' content="600">
+    <meta property='og:image:height' content="500">
+    <meta property='og:type' content="webiste">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Linea Icons -->
+    <link rel="stylesheet" href="css/linea-basic-icons.css">
+    <link rel="stylesheet" href="css/linea-ecommerce-icons.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/ripple.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="icon" href="assets/favicon.jpg" type="image/gif">
+  
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top alt animated navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">The Wisdom of Our Yoruba Elders</a>
+          
+          <button class="navbar-toggler material-ripple" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar i1"></span>
+            <span class="icon-bar i2"></span>
+            <span class="icon-bar i3"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/elderCreed.html">Elder's Creed</a>
+              </li>
+              <li class="nav-item buy-btn">
+                <a class="nav-link" href="/paymentPage.html">Buy Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="payment-form">
+        <div class="container ">
+          
+            <div class="row form-toggle buy-now">
+              <div class="col-lg-5 cards">
+                <h3 class="get-text">GET YOUR COPY NOW!!</h3>
+                <img src="/Assets/tw-visa.png" width="350px" alt="card">
+              </div>
+                <div class="col-lg-6">
+                    <form method="POST" class="buy-form">
+                        <span>
+                            <label for="name">Full Name *</label><br>
+                            <input class="name" type="text" required>
+                        </span>
+                        <span>
+                            <label for="email">Email *</label><br>
+                            <input class="email" type="email" required>
+                        </span>
+                        <span>
+                            <label for="phone-number">Phone Number *</label><br>
+                            <input class="number" type="text" required>
+                        </span>
+                        <span>
+                          <label for="Amount"> Enter Amount *</label>
+                          <input class="amount" type="text" required>
+                        </span>
+                        <span>
+                          <p>Please select your book format</p>
+                          <span class="radio-btn">
+                            <input type="radio" name="radiobutton" id="soft" value="45000">
+                            <label for="soft">Soft Copy : 45,000 Naira</label>
+                          </span>
+                          <span class="radio-btn">
+                            <input type="radio" name="radiobutton" id="hard" value="50000">
+                            <label for="hard">Hard Copy : 50,000 Naira</label>
+                          </span>
+                        </span>
+                        <!-- <span>
+                            <label for="quantity">Quantity</label>
+                            <select name="quantity" id="">
+                                <option id="one" value="1">1</option>
+                                <option id="two" value="2">2</option>
+                                <option id="three" value="3">3</option>
+                                <option id="four" value="4">4</option>
+                                <option id="five" value="5">5</option>
+                                <option id="six" value="6">6</option>
+                                <option id="seven" value="7">7</option>
+                                <option id="eight" value="8">8</option>
+                                <option id="nine" value="9">9</option>
+                                <option id="ten" value="10">10</option>
+                            </select>
+                        </span>
+                         -->
+                        <div class="submit-btn-wrapper">
+                            <button id="submit-btn" class="proceed-btn" type="button">Proceed to checkout</button>    
+                        </div>
+                        <div class="form-message"></div>
+                    </form>
+               </div> 
+            </div>
+            <div class="row form-toggle checkout">
+                <div class="col-lg-12">
+                    <div class="paying-now">
+                         <h3>PAYING NOW</h3>
+                         <div class="payment-detail"></div>
+                         <form>
+                          <script src="https://checkout.flutterwave.com/v3.js"></script>
+                          <button id="make-payment" type="button" class="proceed-btn"  >Pay Now</button>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- WOW js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <script src="js/ripple.min.js"></script>
+
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/custom-script.js"></script>
+</body>
+</html>
